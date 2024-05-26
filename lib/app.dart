@@ -12,12 +12,12 @@ class App extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Portfolio do Lucas ',
-      home:  HomePage(),
+      home:  const HomePage(),
       routes: {
-        '/home': (context) => HomePage(),
-        '/habilidades': (context) => HabilidadesPage(),
-        '/certificados': (context) => CertificadosPage(),
-        '/projetos': (context) => ProjetosPage(),
+        '/home': (context) => const HomePage(),
+        '/habilidades': (context) => const HabilidadesPage(),
+        '/certificados': (context) => const CertificadosPage(),
+        '/projetos': (context) => const ProjetosPage(),
       },
     );
   }

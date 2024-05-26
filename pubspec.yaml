@@ -5,12 +5,13 @@ publish_to: 'none'
 version: 1.0.0+1
 
 environment:
-  sdk: '>=3.3.1 <4.0.0'
+  sdk: '>=3.4.1 <4.0.0'
 
 dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.6
+  boxicons: ^2.0.0 
 
 dev_dependencies:
   flutter_test:
@@ -20,4 +21,10 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets: 
-  - assets/images/boneco_apenas.png
+    - assets/images/boneco_apenas.png
+  fonts:
+    - family: MinhaFonte
+      fonts:
+        - asset: fonts/MinhaFonte-Regular.ttf
+        - asset: fonts/MinhaFonte-Bold.ttf
+          weight: 700

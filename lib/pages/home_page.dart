@@ -3,7 +3,7 @@ import 'package:boxicons/boxicons.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class HomePage extends StatelessWidget {
-  const HomePage({Key? key});
+  const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -74,7 +74,7 @@ class HomePage extends StatelessWidget {
                       color: Color(0xFF081B29),
                     ),
                     child: Image.asset(
-                      'assets/images/logo.png',
+                      'assets/images/logo.jpeg',
                       height: 70,
                     ),
                   ),

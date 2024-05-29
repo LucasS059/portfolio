@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:boxicons/boxicons.dart';
 
 class HabilidadesPage extends StatelessWidget {
   const HabilidadesPage({super.key});
@@ -15,7 +16,7 @@ class HabilidadesPage extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 20.0),
             child: Image.asset(
               'assets/images/logo.jpeg',
-              height: 70,
+              height: 50,
             ),
           ),
           backgroundColor: const Color(0xFF081B29),
@@ -72,8 +73,8 @@ class HabilidadesPage extends StatelessWidget {
                       color: Color(0xFF081B29),
                     ),
                     child: Image.asset(
-                      'assets/images/logo.png',
-                      height: 70,
+                      'assets/images/logo.jpeg',
+                      height: 50,
                     ),
                   ),
                   ListTile(
@@ -112,62 +113,207 @@ class HabilidadesPage extends StatelessWidget {
       body: SingleChildScrollView(
         child: Center(
           child: Padding(
-            padding: const EdgeInsets.all(20.0),
+            padding: EdgeInsets.all(screenWidth > 700 ? 20.0 : 10.0),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const Text(
+                Text(
                   'Habilidades Técnicas',
                   style: TextStyle(
-                    fontSize: 24,
+                    fontSize: screenWidth > 700 ? 24 : 20,
                     color: Colors.lightBlue,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-                const SizedBox(height: 10),
-                ...[
-                  'Conhecimento de linguagens de programação como JavaScript, Python, PHP.',
-                  'Entendimento de conceitos de banco de dados e experiência com SQL, MongoDB.',
-                  'Conhecimento de ferramentas de controle de versão, como Git.',
-                  'Capacidade de resolver problemas de forma eficiente e criativa.',
-                  'Capacidade de escrever código limpo, modular e reutilizável.',
-                  'Familiaridade com metodologias de desenvolvimento ágil, como Scrum ou Kanban.',
-                ].map((skill) => Padding(
-                      padding: const EdgeInsets.symmetric(vertical: 5.0),
-                      child: Text(
-                        '• $skill',
-                        style: const TextStyle(color: Colors.white70, fontSize: 16),
-                      ),
-                    )),
+                SizedBox(height: 10),
+                Card(
+                  color: const Color(0xFF102A43),
+                  child: Padding(
+                    padding: const EdgeInsets.all(10.0),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        _buildSkillRow(
+                          '• Conhecimento de linguagens de programação como JavaScript, Python, PHP.',
+                          [
+                            Boxicons.bxl_javascript,
+                            Boxicons.bxl_python,
+                            Boxicons.bxl_php,
+                          ],
+                          [
+                            Colors.yellow,
+                            Colors.blue,
+                            Colors.blueAccent,
+                          ],
+                        ),
+                        const SizedBox(height: 10),
+                        _buildSkillRow(
+                          '• Entendimento de conceitos de banco de dados e experiência com SQL, MongoDB.',
+                          [
+                            Boxicons.bxs_data,
+                            Boxicons.bxs_data,
+                          ],
+                          [
+                            Colors.orange,
+                            Colors.green,
+                          ],
+                        ),
+                        const SizedBox(height: 10),
+                        _buildSkillRow(
+                          '• Conhecimento de ferramentas de controle de versão, como Git.',
+                          [
+                            Boxicons.bxl_git,
+                          ],
+                          [
+                            Colors.orange,
+                          ],
+                        ),
+                        const SizedBox(height: 10),
+                        _buildSkillRow(
+                          '• Capacidade de resolver problemas de forma eficiente e criativa.',
+                          [
+                            Boxicons.bxs_brain,
+                          ],
+                          [
+                            Colors.purple,
+                          ],
+                        ),
+                        const SizedBox(height: 10),
+                        _buildSkillRow(
+                          '• Capacidade de escrever código limpo, modular e reutilizável.',
+                          [
+                            Boxicons.bx_code_block,
+                          ],
+                          [
+                            Colors.cyan,
+                          ],
+                        ),
+                        const SizedBox(height: 10),
+                        _buildSkillRow(
+                          '• Familiaridade com metodologias de desenvolvimento ágil, como Scrum ou Kanban.',
+                          [
+                            Boxicons.bx_sitemap,
+                          ],
+                          [
+                            Colors.teal,
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
                 const SizedBox(height: 20),
-                const Text(
+                const Divider(color: Colors.lightBlue),
+                const SizedBox(height: 20),
+                Text(
                   'Habilidades Interpessoais',
                   style: TextStyle(
-                    fontSize: 24,
+                    fontSize: screenWidth > 700 ? 24 : 20,
                     color: Colors.lightBlue,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
                 const SizedBox(height: 10),
-                ...[
-                  'Boa capacidade de comunicação e trabalho em equipe.',
-                  'Habilidade para colaborar efetivamente com designers, gerentes de projeto e outros membros da equipe.',
-                  'Capacidade de aprender e se adaptar rapidamente a novas tecnologias e ferramentas.',
-                  'Capacidade de gerenciar o tempo e priorizar tarefas de forma eficiente.',
-                  'Ser proativo e ter uma mentalidade de resolução de problemas.',
-                  'Capacidade de receber e incorporar feedback de forma construtiva.',
-                ].map((skill) => Padding(
-                      padding: const EdgeInsets.symmetric(vertical: 5.0),
-                      child: Text(
-                        '• $skill',
-                        style: const TextStyle(color: Colors.white70, fontSize: 16),
-                      ),
-                    )),
+                Card(
+                  color: const Color(0xFF102A43),
+                  child: Padding(
+                    padding: const EdgeInsets.all(10.0),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        _buildSkillRow(
+                          '• Boa capacidade de comunicação e trabalho em equipe.',
+                          [
+                            Boxicons.bxs_chat,
+                          ],
+                          [
+                            Colors.green,
+                          ],
+                        ),
+                        const SizedBox(height: 10),
+                        _buildSkillRow(
+                          '• Habilidade para colaborar efetivamente com designers, gerentes de projeto e outros membros da equipe.',
+                          [
+                            Boxicons.bxs_group,
+                          ],
+                          [
+                            Colors.blueAccent,
+                          ],
+                        ),
+                        const SizedBox(height: 10),
+                        _buildSkillRow(
+                          '• Capacidade de aprender e se adaptar rapidamente a novas tecnologias e ferramentas.',
+                          [
+                            Boxicons.bxs_book_open,
+                          ],
+                          [
+                            Colors.amber,
+                          ],
+                        ),
+                        const SizedBox(height: 10),
+                        _buildSkillRow(
+                          '• Capacidade de gerenciar o tempo e priorizar tarefas de forma eficiente.',
+                          [
+                            Boxicons.bxs_time,
+                          ],
+                          [
+                            Colors.redAccent,
+                          ],
+                        ),
+                        const SizedBox(height: 10),
+                        _buildSkillRow(
+                          '• Ser proativo e ter uma mentalidade de resolução de problemas.',
+                          [
+                            Boxicons.bxs_bulb,
+                          ],
+                          [
+                            Colors.yellow,
+                          ],
+                        ),
+                        const SizedBox(height: 10),
+                        _buildSkillRow(
+                          '• Capacidade de receber e incorporar feedback de forma construtiva.',
+                          [
+                            Boxicons.bxs_message_rounded_dots,
+                          ],
+                          [
+                            Colors.orange,
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
               ],
             ),
           ),
         ),
       ),
+    );
+  }
+
+  Widget _buildSkillRow(String text, List<IconData> icons, List<Color> colors) {
+    return Row(
+      children: [
+        Expanded(
+          child: Text(
+            text,
+            style: const TextStyle(color: Colors.white70, fontSize: 16),
+          ),
+        ),
+        Row(
+          children: List.generate(
+            icons.length,
+            (index) => Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 2.0),
+              child: Icon(
+                icons[index],
+                color: colors[index],
+              ),
+            ),
+          ),
+        ),
+      ],
     );
   }
 }

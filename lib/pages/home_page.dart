@@ -250,7 +250,7 @@ class HomePage extends StatelessWidget {
                                   children: [
                                     IconButton(
                                       onPressed: () {
-                                        launch('https://www.linkedin.com/in/seu_linkedin');
+                                        launch('https://www.linkedin.com/in/lucas-silva-barboza-a2568b285/');
                                       },
                                       icon: const Icon(
                                         Boxicons.bxl_linkedin,
@@ -260,7 +260,7 @@ class HomePage extends StatelessWidget {
                                     ),
                                     IconButton(
                                       onPressed: () {
-                                        launch('https://github.com/seu_github');
+                                        launch('https://github.com/LucasS059');
                                       },
                                       icon: const Icon(
                                         Boxicons.bxl_github,
@@ -270,7 +270,7 @@ class HomePage extends StatelessWidget {
                                     ),
                                     IconButton(
                                       onPressed: () {
-                                        launch('mailto:seu_email');
+                                        launch('mailto:lucasbarboza299@gmail.com');
                                       },
                                       icon: const Icon(
                                         Boxicons.bx_envelope,

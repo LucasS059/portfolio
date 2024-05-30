@@ -5,7 +5,7 @@ publish_to: 'none'
 version: 1.0.0+1
 
 environment:
-  sdk: '>=3.1.1 <4.0.0'
+  sdk: '>=3.4.1 <4.0.0'
 
 dependencies:
   flutter:
@@ -24,5 +24,7 @@ flutter:
   assets: 
     - assets/images/boneco_apenas.png
     - assets/images/logo.jpeg
+    - assets/images/Tela_App_YEGestao.jpg
+    - assets/images/MissaoAmbiental.png
 
  

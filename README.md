@@ -1,16 +1,49 @@
-# portfolio_em_flutter
+# Portfólio Pessoal em Flutter
 
-A new Flutter project.
+Este repositório contém o código-fonte do meu portfólio pessoal desenvolvido com Flutter. O projeto foi criado com o objetivo de apresentar minhas habilidades, experiências e projetos de uma maneira visualmente atraente e interativa.
 
-## Getting Started
+## Funcionalidades
 
-This project is a starting point for a Flutter application.
+- **Home Page:** Uma visão geral com uma breve introdução e um link para as minhas redes sociais.
+- **Sobre Mim:** Uma seção detalhada com informações sobre minha formação, habilidades e interesses.
+- **Projetos:** Uma galeria de projetos com imagens, descrições e links para o código-fonte e/ou demonstrações.
+- **Certificados:** Um secão onde mostra meus certificado.
 
-A few resources to get you started if this is your first Flutter project:
+## Tecnologias Utilizadas
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- **Flutter:** O framework principal para o desenvolvimento do aplicativo.
+- **Dart:** Linguagem de programação usada para escrever o código Flutter.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Como Rodar o Projeto
+
+1. **Clone o repositório:**
+
+   ```bash
+   git clone https://github.com/seuusuario/seu-repositorio.git
+   ```
+
+2. **Navegue até o diretório do projeto:**
+
+   ```bash
+   cd seu-repositorio
+   ```
+
+3. **Instale as dependências:**
+
+   ```bash
+   flutter pub get
+   ```
+
+4. **Execute o projeto:**
+
+   ```bash
+   flutter run
+   ```
+
+## Contribuições
+
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests com melhorias e correções.
+
+## Link para Acesso
+
+Para acessar o portfólio, clique no seguinte link: [Portfólio Lucas](http://portfoliolucas.s3-website-sa-east-1.amazonaws.com/)

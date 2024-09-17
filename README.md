@@ -40,10 +40,6 @@ Este repositório contém o código-fonte do meu portfólio pessoal desenvolvido
    flutter run
    ```
 
-## Contribuições
-
-Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests com melhorias e correções.
-
 ## Link para Acesso
 
-Para acessar o portfólio, clique no seguinte link: [Portfólio Lucas](http://portfoliolucas.s3-website-sa-east-1.amazonaws.com/)
+Para acessar o portfólio, clique no seguinte link: [Portfólio Lucas]

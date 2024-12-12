@@ -42,4 +42,4 @@ Este repositório contém o código-fonte do meu portfólio pessoal desenvolvido
 
 ## Link para Acesso
 
-Para acessar o portfólio, clique no seguinte link: [Portfólio Lucas]
+Para acessar o portfólio, clique no seguinte link: https://personal-site.d2jtbyiqfovfko.amplifyapp.com

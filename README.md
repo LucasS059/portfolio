@@ -19,13 +19,13 @@ Este repositório contém o código-fonte do meu portfólio pessoal desenvolvido
 1. **Clone o repositório:**
 
    ```bash
-   git clone https://github.com/seuusuario/seu-repositorio.git
+   git clone https://github.com/LucasS059/portfolio.git
    ```
 
 2. **Navegue até o diretório do projeto:**
 
    ```bash
-   cd seu-repositorio
+   cd portfolio
    ```
 
 3. **Instale as dependências:**
